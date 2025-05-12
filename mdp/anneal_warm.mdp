@@ -1,0 +1,48 @@
+title                = IDP simulation annealing 300K to 600K
+; Run parameters
+;define             = Protein    ; position restrain on Protein
+integrator          = md   ; leap-frog integrator
+dt                  = 0.001   ; 1 fs
+nsteps              = 2000000  ; 2 ns
+;
+constraints          =  h-bonds
+constraint-algorithm = LINCS 
+; output control
+;nstxout            =  1000  
+;nstvout            =  1000
+;nstfout            =  1000
+nstlog              =  1000
+nstenergy           =  1000
+nstxout-compressed  =  1000
+; Neighbor searching
+cutoff-scheme      = Verlet
+nstlist            = 20    
+ns_type            = grid
+rlist              = 1.6
+rcoulomb           = 1.6
+rvdw               = 1.6
+DispCorr           = EnerPres
+; Electrostatics
+coulombtype        = PME
+pme_order          = 4
+fourierspacing     = 0.1
+; Temperature coupling 
+Tcoupl             = berendsen 
+tc_grps            = Protein Non-Protein
+tau_t              = 0.1   0.1   ; time constant in ps
+ref_t              = 300.0 300.0 
+ld-seed            = 50316080
+; 
+;
+annealing = single single
+annealing_npoints = 7 7 
+annealing_time = 0   300 600 900 1200 1500 1800 0   300 600 900 1200 1500 1800
+annealing_temp = 300 350 400 450 500  550  600  300 350 400 450 500  550  600  
+; generate velocity of
+;gen_vel           = yes 
+; PBC
+pbc               = xyz
+;
+nstcomm           = 1
+comm-mode         = linear
+comm-grps         = Protein Non-Protein

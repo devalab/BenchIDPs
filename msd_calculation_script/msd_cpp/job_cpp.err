@@ -1,0 +1,11 @@
+meansquaredisp.cpp: In member function ‘void Execut::CollectPx(unsigned int**, double**, double**, double**, unsigned int, unsigned int)’:
+meansquaredisp.cpp:46:11: warning: variable ‘nextPt’ set but not used [-Wunused-but-set-variable]
+  unsigned nextPt;
+           ^~~~~~
+inputModule.cpp: In member function ‘void InputModule::getFileData(unsigned int**, double**, double**, double**, unsigned int, unsigned int)’:
+inputModule.cpp:57:10: warning: ignoring return value of ‘int fscanf(FILE*, const char*, ...)’, declared with attribute warn_unused_result [-Wunused-result]
+    fscanf(inFileAllId, "%d", &id);
+    ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+inputModule.cpp:58:4: warning: ‘last’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+    if(last == id)
+    ^~

@@ -1,0 +1,59 @@
+# This file was created Wed Nov 15 23:29:09 2023
+# Created by:
+#                       :-) GROMACS - gmx rmsf, 2016.3 (-:
+# 
+# Executable:   /usr/local/apps/gromacs-2016.3-v2/bin/gmx
+# Data prefix:  /usr/local/apps/gromacs-2016.3-v2
+# Working dir:  /home2/dargi.shameer/vishal/ab42_a99sb_disp_disp_water/analysis/RMSF
+# Command line:
+#   gmx rmsf -s ../../md_prod_310k_a99sb_disp_disp_water_1.tpr -f ../../md_prod_310k_a99sb_disp_disp_water_1_nopbc.xtc -o rmsf_protein_calpha_a99sb_disp_disp_water.xvg -res
+# gmx rmsf is part of G R O M A C S:
+#
+# Gromacs Runs One Microsecond At Cannonball Speeds
+#
+@    title "RMS fluctuation"
+@    xaxis  label "Residue"
+@    yaxis  label "(nm)"
+@TYPE xy
+    1   0.9754
+    2   0.9418
+    3   0.9699
+    4   0.8878
+    5   0.6766
+    6   0.5799
+    7   0.5684
+    8   0.5792
+    9   0.6336
+   10   0.6642
+   11   0.7255
+   12   0.6535
+   13   0.8200
+   14   0.8645
+   15   0.9624
+   16   0.8794
+   17   0.6570
+   18   0.5998
+   19   0.6302
+   20   0.5205
+   21   0.4392
+   22   0.4812
+   23   0.5715
+   24   0.6135
+   25   0.5628
+   26   0.5927
+   27   0.7014
+   28   0.7558
+   29   0.8160
+   30   0.8687
+   31   0.8218
+   32   0.8872
+   33   0.9554
+   34   0.9881
+   35   0.8927
+   36   0.9226
+   37   0.8947
+   38   0.8746
+   39   0.9421
+   40   1.0500
+   41   1.1982
+   42   1.3610
